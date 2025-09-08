@@ -69,6 +69,10 @@
       vim.keymap.set('n', 'gj', 'j', {desc = "Bufferline down"})
       vim.keymap.set('n', 'gk', 'k', {desc = "Bufferline up"})
 
+      -- Folds
+      vim.keymap.set('n', 'zs', ':mkview <CR>', {desc = "Save folds"})
+      vim.keymap.set('n', 'zl', ':loadview <CR>', {desc = "Load folds"})
+
       -- Which-key
       vim.keymap.set({'n', 'x', 'o'}, '<leader>,', function()
         require("which-key").show({ global = true })
