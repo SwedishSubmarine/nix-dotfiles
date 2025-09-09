@@ -6,7 +6,7 @@
     userName = "Emily Tiberg";
     aliases = {
       s = "status";
-      lg = ''log --oneline --graph --decorate --pretty=format:"%C(cyan)%h\ %ad%Cred%d\%Creset%s%Cblue" --date=short'';
+      lg = ''log --oneline --graph --decorate --pretty=format:"%C(cyan)%h\ %ad%Cred%d \%Creset%s%Cblue" --date=short'';
     };
     ignores = ["**/.DS_Store" ];
     extraConfig = {
