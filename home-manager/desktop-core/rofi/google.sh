@@ -17,7 +17,7 @@ list() {
     done
 }
 main() {
-  platform=$( (list) | rofi -dmenu -matching fuzzy -no-custom -p -i "Open google... " )
+  platform=$( (list) | rofi -dmenu -matching fuzzy -no-custom -i -p "Open google... " )
 
   if [[ -n "$platform" ]]; then
     url=${URLS[$platform]}

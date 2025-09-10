@@ -14,10 +14,10 @@ list() {
     done
 }
 main() {
-  platform=$( (list) | rofi -dmenu -matching fuzzy -no-custom -p -i "Platform > " )
+  platform=$( (list) | rofi -dmenu -matching fuzzy -no-custom -i -p "Platform > " )
 
   if [[ -n "$platform" ]]; then
-    query=$( (echo ) | rofi  -dmenu -matching fuzzy -p -i "$platform > " )
+    query=$( (echo ) | rofi  -dmenu -matching fuzzy -i -p "$platform > " )
 
     if [[ -n "$query" ]]; then
       url=${URLS[$platform]}$query
