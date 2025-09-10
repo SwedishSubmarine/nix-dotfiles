@@ -1,8 +1,8 @@
 # Notes
 NixOS configuration currently managing 
-* M2 MacBook Air, **Adamantite** running nixOS under asahi
-* 2018 MacBook Pro, **Eridium** with a T2 security chip.
-* My temporary server, an old Mac Mini, **Uru** with a T2 security chip.
+* **Adamantite**, My M2 MacBook Air, running nixOS under asahi
+* **Eridium**, My 2018 MacBook Pro, with a T2 security chip.
+* **Uru**, My temporary server, an old Mac Mini, with a T2 security chip.
 
 ## Structure
 - `colors.nix`: Colorscheme configuration
