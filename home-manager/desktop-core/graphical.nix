@@ -256,8 +256,6 @@ in
       } else {
         action = focus-workspace 4;
       });
-      
-      
       "Mod+5" = {
         action = focus-workspace 5;
       };
@@ -586,7 +584,7 @@ in
         gap = 4.0;
       };
     };
-  } ++ (if settings.steam then {
+  } // (if settings.steam then {
     workspaces."4".name = "steam"; 
     window-rules = [
       {
