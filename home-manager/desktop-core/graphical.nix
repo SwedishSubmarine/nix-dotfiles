@@ -76,6 +76,10 @@ in
         hotkey-overlay.title = "rofi launcher";
         action = spawn "rofi" "-modes" "drun" "-show" "drun" "-icon-theme" ''"Papirus"'' "-show-icons";
       };
+      "Mod+G" = {
+        hotkey-overlay.title = "Open Google...";
+        action = spawn "sh" "${./rofi/google.sh}";
+      };
       "Mod+E" = {
         hotkey-overlay.title = "Web search";
         action = spawn "sh" "${./rofi/web-search.sh}";
