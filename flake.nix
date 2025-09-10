@@ -111,6 +111,7 @@
       t2 = false;
       kde = false;
       server = false;
+      steam = false;
     };
     # T2 x86 Laptop
     nixosConfigurations.Eridium =  systemConfig "x86_64-linux" ./nixos/eridium/configuration.nix {
@@ -120,6 +121,7 @@
       t2 = true;
       kde = false;
       server = false;
+      steam = true;
     };
     # T2 x86 Server
     nixosConfigurations.Uru = systemConfig "x86_64-linux" ./nixos/uru/configuration.nix {
@@ -129,6 +131,7 @@
       t2 = true;
       kde = false;
       server = true;
+      steam = false;
     };
   };
 }
