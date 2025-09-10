@@ -6,6 +6,8 @@ let
     swww img $(find ${../../wallpapers} -type f \( -name '*.png' -o -name '*.jpg' \) | shuf -n 1) --transition-type any --transition-fps 60
   '';
   calendar = pkgs.writeScript "calendar" ''
+    # Stolen from Xenia again :3
+    #!/bin/sh
     ID=$(niri msg -j windows | jq '[.[] | select(.app_id=="firefox") | .id] | last')
     if [ "$ID" != "null" ] ; then
         # firefox is open, switch to it

@@ -1,5 +1,8 @@
 # Notes
-NixOS configuration currently managing my M2 MacBook Air, **Adamantite** running nixOS under asahi as well as my server, an old Mac Mini, **Uru**. 
+NixOS configuration currently managing 
+* M2 MacBook Air, **Adamantite** running nixOS under asahi
+* 2018 MacBook Pro, **Eridium** with a T2 security chip.
+* My temporary server, an old Mac Mini, **Uru** with a T2 security chip.
 
 ## Structure
 - `colors.nix`: Colorscheme configuration
@@ -52,6 +55,20 @@ stuff. There *might* also be one for swaylock but I can't recall.
 Wezterm is also weird because it has built in color schemes so I'll replace the
 colors I can and then maybe fix it another time.
 
+## Scripts
+Most of my scripts are baked into certain configuration files.
+This includes my `random-wallpaper` script which uses swww and runs as a systemd
+service to randomize my wallpaper once per hour and my small calendar opening
+script because xdg-open is mean to niri. 
+I also have a few rofi scripts inside of `home-manager/desktop-core/rofi`. 
+- `web-search.sh` Search things on ddg and for nix options and packages. You
+  can add more URLs quite easily.
+- `google.sh` Used to quickly open my calendar, drive and mail. Thunderbird just
+  isn't very good in my experience.
+- `rofi-power-menu` Small script to give me power options.
+- `niri-action.sh` Used to run niri msg actions that I don't have easy keyboard
+  access to. 
+
 ## Credits
 I believe all the wallpapers that are not mine are taken from [zhichaohs
 catppuccin-wallpapers](https://github.com/zhichaoh/catppuccin-wallpapers/tree/main)
@@ -85,3 +102,8 @@ use them very much.
 
 I use `programs.neovim.extraPackages` for language servers. I think this is
 awesome and cool 🐈 
+
+### Scripts 
+My `google.sh` script sort of depends on you having a work and personal google
+account and signing into your personal one first. I would not hardcode this if I
+could but I thought this would be neat to have so I surrendered to it. 
