@@ -70,9 +70,13 @@ I also have a few rofi scripts inside of `home-manager/desktop-core/rofi`.
   access to. 
 
 ## Credits
-I believe all the wallpapers that are not mine are taken from [zhichaohs
+Most of the wallpapers are from Simon Stålenhag, his website can be [found
+here](https://www.simonstalenhag.se/new/other.html), and from two git repos:
+[zhichaohs
 catppuccin-wallpapers](https://github.com/zhichaoh/catppuccin-wallpapers/tree/main)
-repo forked from `vipinVIP/wallpapers`.
+repo forked from `vipinVIP/wallpapers` and [notAxons
+wallpapers](https://github.com/notAxon/wallpapers/tree/main) repo.
+The remainder are my own photographs.
 
 The rofi power menu script is found in the [jluttine
 rofi-power-menu](https://github.com/jluttine/rofi-power-menu/tree/master) repo.
